@@ -1,0 +1,24 @@
+{
+  "name": "bbc-covid-news",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeongHwan-dev/bbc-covid-news.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeongHwan-dev/bbc-covid-news/issues"
+  },
+  "homepage": "https://github.com/JeongHwan-dev/bbc-covid-news#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
