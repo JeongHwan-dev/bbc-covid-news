@@ -34,7 +34,6 @@
     let step;
     let boundingRect;
 
-    // for (let i = 0; i < stepElems.length; i++) {
     for (let i = ioIndex - 1; i < ioIndex + 2; i++) {
       step = stepElems[i];
 
