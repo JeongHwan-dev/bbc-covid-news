@@ -12,6 +12,16 @@
     graphicElems[i].dataset.index = i;
   }
 
+  // 컨텐츠 활성화
+  function activate() {
+    currentItem.classList.add('visible');
+  }
+
+  // 컨텐츠 비활성화
+  function inactivate() {
+    currentItem.classList.remove('visible');
+  }
+
   // 스크롤 시 이벤트 처리
   window.addEventListener('scroll', () => {
     let step;
@@ -25,12 +35,12 @@
         boundingRect.top > window.innerHeight * 0.1 &&
         boundingRect.top < window.innerHeight * 0.8
       ) {
-        if (currentItem) {
-          currentItem.classList.remove('visible');
-        }
-        currentItem = graphicElems[step.dataset.index];
-        currentItem.classList.add('visible');
+        inactivate();
+        currentItem = graphicElems[step.dataset.index]; // 스크롤 위치에 따라 현재 컨텐츠 변경
+        activate();
       }
     }
   });
+
+  activate(); // 첫 번째 컨텐츠 활성화
 })();
