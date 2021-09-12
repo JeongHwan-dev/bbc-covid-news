@@ -94,4 +94,9 @@
 
   // 첫 번째 컨텐츠 활성화
   activate();
+
+  // 새로고침 시 스크롤 위치 최상단 위치로 변경
+  window.addEventListener('load', () => {
+    setTimeout(() => scrollTo(0, 0), 100);
+  });
 })();
